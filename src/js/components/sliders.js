@@ -4,6 +4,7 @@ const portfolioSlider = new Swiper(portSlider, {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+  /* выдает ошибку в консоли
   on: {
     init: function () {
       const activeSlide = portSlider.querySelector('swiper-slide-active');
@@ -15,6 +16,7 @@ const portfolioSlider = new Swiper(portSlider, {
       nextNextActiveSlide.classList.add('slider-visible');
     },
   },
+  */
   navigation: {
     nextEl: '.portfolio-section__next',
     prevEl: '.portfolio-section__prev',
@@ -50,4 +52,14 @@ document.querySelector('.portfolio-section__next').addEventListener('click', () 
   activeSlide.classList.add('slider-visible');
   nextActiveSlide.classList.add('slider-visible');
   nextNextActiveSlide.classList.add('slider-visible');
+});
+
+const testimonialsSlider = new Swiper('.testimonials__items', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev',
+  },
 });
