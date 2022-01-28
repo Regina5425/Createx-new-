@@ -2,12 +2,6 @@
   padding: 120px 0;
   background-color: $white;
 
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px;
-  }
-
   &__image {
     grid-column: 7 span;
   }
