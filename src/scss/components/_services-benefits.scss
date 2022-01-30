@@ -1,0 +1,82 @@
+.services-benefits {
+  padding-top: 80px;
+  background-color: $ebony;
+
+  &__title {
+    color: $white;
+  }
+
+  &__btn {
+    width: 390px;
+    transform: translateY(13px);
+  }
+
+  &__centered {
+    margin-bottom: -13px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__list {
+    --mission-gap: 94px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 27px;
+    gap: calc(var(--mission-gap) * 2);
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 71px;
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: absolute;
+        right: calc(-1 * var(--mission-gap));
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-image: url(../img/divider.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--terms {
+      background-image: url(../img/terms.svg);
+    }
+    &--workers {
+      background-image: url(../img/workers.svg);
+    }
+    &--control {
+      background-image: url(../img/control.svg);
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: $white;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $storm-gray;
+  }
+}
