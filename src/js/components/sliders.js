@@ -62,19 +62,6 @@ if (relatedSlider) {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    /* выдает ошибку в консоли
-    on: {
-      init: function () {
-        const activeSlide = relatedSlider.querySelector('swiper-slide-active');
-        const nextActiveSlide = activeSlide.nextElementSibling;
-        const nextNextActiveSlide = nextActiveSlide.nextElementSibling;
-
-        activeSlide.classList.add('slider-visible');
-        nextActiveSlide.classList.add('slider-visible');
-        nextNextActiveSlide.classList.add('slider-visible');
-      },
-    },
-    */
     navigation: {
       nextEl: '.related-projects__next',
       prevEl: '.related-projects__prev',

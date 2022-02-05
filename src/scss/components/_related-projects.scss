@@ -1,5 +1,6 @@
 .related-projects {
-  padding: 180px 0;
+  padding-top: 180px;
+  padding-bottom: 100px;
   background-color: $white;
 
   &__top {
@@ -25,17 +26,6 @@
   &__items {
     padding: 30px;
     margin: -30px;
-    /*
-    .swiper-slide {
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    }
-
-    .slider-visible {
-      opacity: 1;
-      visibility: visible;
-    }*/
   }
 }
 .related-projects-item {
