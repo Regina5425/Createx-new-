@@ -33,6 +33,7 @@
     &--active {
       color: $white;
       background-color: $primary;
+      pointer-events: none;
 
       .portfolio-tabs-nav__text {
         color: $white;
@@ -48,6 +49,7 @@
     color: inherit;
     fill: currentColor;
     object-fit: cover;
+    pointer-events: none;
   }
 
   &__text {
@@ -57,12 +59,22 @@
     text-align: center;
     color: #9a9ca5;
     transition: color 0.3s ease-in-out;
+    pointer-events: none;
   }
 }
 
 .portfolio-tabs {
   &__item {
+    display: none;
     grid-column: 4 span;
+
+    &--visible {
+      display: block;
+    }
+
+    &--visible-more {
+      display: block !important;
+    }
   }
 }
 
