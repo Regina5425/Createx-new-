@@ -6,19 +6,6 @@ if (portSlider) {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    /* выдает ошибку в консоли
-    on: {
-      init: function () {
-        const activeSlide = portSlider.querySelector('swiper-slide-active');
-        const nextActiveSlide = activeSlide.nextElementSibling;
-        const nextNextActiveSlide = nextActiveSlide.nextElementSibling;
-
-        activeSlide.classList.add('slider-visible');
-        nextActiveSlide.classList.add('slider-visible');
-        nextNextActiveSlide.classList.add('slider-visible');
-      },
-    },
-    */
     navigation: {
       nextEl: '.portfolio-section__next',
       prevEl: '.portfolio-section__prev',
@@ -109,3 +96,27 @@ const testimonialsSlider = new Swiper('.testimonials__items', {
     prevEl: '.testimonials__prev',
   },
 });
+
+// Слайдер на внутренней странице work
+const workImages = document.querySelector('.work-images-slider');
+
+if (workImages) {
+  const workSlider = new Swiper(".work-images-nav", {
+    spaceBetween: 20,
+    slidesPerView: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const workSliderNav = new Swiper(workImages, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".work-images__next",
+      prevEl: ".work-images__prev",
+    },
+    thumbs: {
+      swiper: workSlider,
+    },
+  });
+}
+
