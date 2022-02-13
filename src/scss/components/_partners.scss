@@ -9,6 +9,16 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 102px;
+    row-gap: 40px;
+    column-gap: 102px;
+  }
+
+  &--about {
+    padding: 120px 0;
+    background-color: $white;
+
+    .partners__title {
+      margin-bottom: 25px;
+    }
   }
 }
