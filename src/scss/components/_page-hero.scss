@@ -62,4 +62,10 @@
   &--about {
     background-image: url(../img/about-hero-bg.png);
   }
+
+  &--positions {
+    background-color: $athens;
+    background-image: url(../img/positions-hero-bg.png);
+    background-position: right -199px bottom;
+  }
 }
