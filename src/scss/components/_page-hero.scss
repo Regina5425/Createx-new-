@@ -68,4 +68,10 @@
     background-image: url(../img/positions-hero-bg.png);
     background-position: right -199px bottom;
   }
+
+  &--news {
+    background-color: $athens;
+    background-image: url(../img/news-hero-bg.png);
+    background-position: right -201px bottom;
+  }
 }
