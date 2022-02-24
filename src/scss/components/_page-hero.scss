@@ -134,4 +134,10 @@
 
     background-color: $athens;
   }
+
+  &--contacts {
+    background-color: $athens;
+    background-image: url(../img/contacts-hero-bg.png);
+    background-position: right -201px bottom;
+  }
 }
