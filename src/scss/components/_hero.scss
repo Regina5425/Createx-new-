@@ -1,12 +1,7 @@
 .hero {
-  padding-top: 220px;
-  padding-bottom: 354px;
-  color: $white;
-  background-image: url(../img/hero-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: $gray;
+  &__container {
+    max-width: 1230px;
+  }
 
   &__content {
     max-width: 590px;
@@ -19,4 +14,20 @@
       }
     }
   }
+}
+
+.hero-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-slide {
+  padding-top: 220px;
+  padding-bottom: 354px;
+  color: $white;
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $gray;
 }

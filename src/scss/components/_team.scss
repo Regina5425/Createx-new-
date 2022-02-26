@@ -17,10 +17,24 @@
     line-height: 150%;
     text-align: center;
     color: $ebony;
+    transition: color 0.3s ease-in-out;
 
     a {
       border-bottom: 1px solid currentColor;
       color: $primary;
+
+      &:focus {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: $active;
+      }
+
+      &:active {
+        color: $active;
+      }
     }
   }
 

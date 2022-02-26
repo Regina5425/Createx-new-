@@ -15,20 +15,42 @@
   background-position: left center;
   background-size: 40px 40px;
   background-repeat: no-repeat;
+
   &__caption {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
     color: $gray;
   }
+
   &__value {
     font-size: 18px;
     line-height: 150%;
     color: $ebony;
+    transition: color 0.3s ease-in-out;
   }
+
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    .contacts-link__value {
+      color: $primary;
+    }
+  }
+
+  &:active {
+    .contacts-link__value {
+      color: $active;
+    }
+  }
+
   &--call {
     background-image: url(../img/phone.svg);
   }
+
   &--mail {
     background-image: url(../img/chat.svg);
   }

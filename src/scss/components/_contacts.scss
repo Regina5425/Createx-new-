@@ -91,6 +91,12 @@
     width: 100%;
   }
 
+  .is-focused {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
   .choices__inner {
     margin: 0;
     border: 1px solid #d7dadd;

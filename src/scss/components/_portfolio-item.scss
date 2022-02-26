@@ -5,6 +5,7 @@
   border-radius: 4px;
   box-shadow: $main-shadow;
   background: $white;
+  transition: transform 0.3s ease-in-out;
 
   &__content {
     @include flex-column-center;
@@ -41,5 +42,14 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: $primary;
+  }
+
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
   }
 }

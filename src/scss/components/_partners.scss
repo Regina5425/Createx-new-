@@ -8,9 +8,16 @@
 
   &__list {
     display: grid;
+    column-gap: 102px;
     grid-template-columns: repeat(6, 1fr);
     row-gap: 40px;
-    column-gap: 102px;
+  }
+
+  &__link {
+    &:focus {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
   }
 
   &--about {

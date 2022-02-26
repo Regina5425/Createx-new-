@@ -21,9 +21,23 @@
     font-size: 14px;
     line-height: 150%;
     color: $gray;
+    transition: color 0.3s ease-in-out;
 
     &:not([href]) {
       color: #9a9ca5;
+    }
+
+    &:focus {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:active {
+      color: $active;
     }
   }
 }

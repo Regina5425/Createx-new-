@@ -161,3 +161,17 @@ if (historySlider) {
     });
   });
 }
+
+// Слайдер на главной странице
+const heroSlider = new Swiper('.hero-slider', {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.hero__next',
+    prevEl: '.hero__prev',
+  },
+  pagination: {
+    el: '.hero__pag',
+    type: 'bullets',
+  },
+});

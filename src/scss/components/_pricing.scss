@@ -96,7 +96,20 @@
       line-height: 36px;
       letter-spacing: 0.5px;
       text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
 
+      &:focus {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: $active;
+      }
+
+      &:active {
+        color: $active;
+      }
     }
 
    &:first-child {
