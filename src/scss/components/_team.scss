@@ -3,13 +3,42 @@
   padding-bottom: 118px;
 
   &__list {
-    margin-bottom: 20px;
+    margin-bottom: 85px;
     row-gap: 0;
     column-gap: 30px;
   }
 
   &__item {
     grid-column: 3 span;
+
+    &:hover {
+      .team__socials {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__top {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 0;
+  }
+
+  &__socials {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 4px 4px;
+    padding: 20px 10px;
+    width: 100%;
+    background-color: rgba($primary, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 
   &__text {
@@ -50,10 +79,10 @@
       fill: $white;
       object-fit: cover;
     }
-  }
 
-  &__image {
-    margin-bottom: 12px;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
   }
 
   &__name {
