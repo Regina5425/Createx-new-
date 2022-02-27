@@ -7,7 +7,12 @@
 
   &__nav {
     margin-left: -112px;
+
+    @include minidesk {
+      margin-left: 0;
+    }
   }
+
   &--main {
     background-color: $white;
   }
@@ -24,5 +29,9 @@
   &:focus {
     outline: 2px solid $primary;
     outline-offset: 2px;
+  }
+
+  @include minidesk {
+    max-width: 100px;
   }
 }
