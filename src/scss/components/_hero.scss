@@ -62,14 +62,23 @@
       &::after {
         display: none;
       }
+
+      @include minitablet {
+        width: 25%;
+      }
     }
 
     @include minidesk {
-      left: calc((100% - 1150px) / 2) !important;
+      left: 3% !important;
     }
 
     @include tablet {
-      left: calc((100% - 1000px) / 2) !important;
+      left: 15px !important;
+    }
+
+    @include minitablet {
+      bottom: 50px !important;
+      width: calc(100% - 30px) !important;
     }
   }
 
@@ -131,4 +140,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $gray;
+
+  @include minitablet {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }

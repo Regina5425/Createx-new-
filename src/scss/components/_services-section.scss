@@ -15,6 +15,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+
+  @include tablet {
+    &__item {
+      grid-column: 2 span;
+    }
+  }
 }
 
 .services-item {

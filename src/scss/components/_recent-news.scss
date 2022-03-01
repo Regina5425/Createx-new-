@@ -13,6 +13,10 @@
     grid-template-rows: repeat(2, 255px);
     margin-bottom: 80px;
     gap: 30px;
+
+    @include tablet {
+      grid-template-rows: initial;
+    }
   }
 
   &__item {
@@ -22,6 +26,15 @@
     &:first-child {
       grid-column:7 span;
       grid-row: 2 span;
+
+      @include tablet {
+        grid-column: 12 span;
+        grid-row: 1 span;
+      }
+    }
+
+    @include tablet {
+      grid-column: 12 span;
     }
   }
 }

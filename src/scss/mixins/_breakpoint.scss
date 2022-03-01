@@ -22,8 +22,14 @@
   }
 }
 
-@mixin mobile {
+@mixin minitablet {
   @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (576px)) {
     @content;
   }
 }
