@@ -80,6 +80,10 @@
       bottom: 50px !important;
       width: calc(100% - 30px) !important;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__bar {
@@ -107,6 +111,11 @@
     .btn {
       &:not(:last-child) {
         margin-right: 20px;
+
+        @include mobile {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -144,5 +153,9 @@
   @include minitablet {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+
+  @include mobile {
+    padding: 100px 0;
   }
 }

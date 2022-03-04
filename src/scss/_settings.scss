@@ -91,6 +91,11 @@ a {
     font-size: 60px;
     line-height: 75px;
   }
+
+  @include mobile {
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 
 .main-descr {
@@ -102,6 +107,11 @@ a {
   &--home {
     color: $white;
     margin-bottom: 60px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -175,6 +185,11 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .descr {
@@ -187,6 +202,12 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mobile {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .section-offset {
@@ -194,6 +215,10 @@ a {
 
   @include minitablet {
     padding-top: 60px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
   }
 }
 
@@ -338,6 +363,10 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .to-top {

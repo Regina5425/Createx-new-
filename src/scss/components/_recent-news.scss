@@ -24,12 +24,12 @@
 
 
     &:first-child {
-      grid-column:7 span;
+      grid-column: 7 span;
       grid-row: 2 span;
 
       @include tablet {
         grid-column: 12 span;
-        grid-row: 1 span;
+        grid-row:auto;
       }
     }
 

@@ -40,4 +40,8 @@
       color: $active;
     }
   }
+
+  @include minitablet {
+    flex-wrap: wrap;
+  }
 }

@@ -9,6 +9,11 @@
   &__list {
     margin-bottom: 80px;
   }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .services-list {
@@ -20,6 +25,16 @@
     &__item {
       grid-column: 2 span;
     }
+  }
+
+  @include mobile {
+    &__item {
+      grid-column: 4 span;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

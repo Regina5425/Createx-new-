@@ -15,6 +15,10 @@
     @include minitablet {
       --mission-gap: 10px;
     }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -48,6 +52,12 @@
     }
     &--comfort {
       background-image: url(../img/comfort.svg);
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -103,7 +113,15 @@
         .form-field__input {
           width: 100%;
         }
+
+        @include mobile {
+          width: 100%;
+        }
       }
+    }
+
+    @include mobile {
+      display: block;
     }
   }
 
@@ -113,5 +131,10 @@
 
   &__btn {
     padding: 11px 29px;
+  }
+
+  @include mobile {
+    padding: 10px 15px;
+    top: initial;
   }
 }
