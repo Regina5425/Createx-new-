@@ -1,6 +1,7 @@
 .header {
   padding-top: 23px;
   padding-bottom: 21px;
+
   &__container {
     @include flex-all-sb;
   }
@@ -13,7 +14,26 @@
     }
 
     @include tablet {
-      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 80%;
+      height: 100vh;
+      padding: 50px;
+      z-index: 1000;
+      overflow-y: auto;
+      display: block;
+      background-color: $white;
+      transform: translateX(-150%);
+      transition: transform 0.3s ease-in-out;
+
+      &--active {
+        transform: none;
+      }
+    }
+
+    @include mobile {
+      padding: 20px;
     }
   }
 
